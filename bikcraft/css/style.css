@@ -1,0 +1,44 @@
+html {
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0/
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --font-1-s: Poppins 600 12/16;
+    --font-1-m: Poppins 400 18/24;
+    --font-1-m-b: Poppins 600 18/24;
+    --font-1-l: Poppins 400 24/36;
+    --font-1-xl: Poppins 600 32/40;
+    --font-1-xxl: Poppins 600 64/72
+    --font-2-xs: Roboto 400 14/20;
+    --font-2-s: Roboto 400 16/24;
+    --font-2-m: Roboto 500 18/24;
+    --font-2-l: Roboto 400 24/36;
+    --font-2-l-b: Roboto 500 24/36 1.5% ALLCAPS;
+}
