@@ -1,0 +1,123 @@
+.bicicletas > li:nth-child(even) {
+  background: linear-gradient(to right, var(--w) 30%, var(--c11) 0);
+  padding: 60px 0px;
+}
+
+.bicicletas-item {
+  align-items: center;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bicicletas-info {
+  display: grid;
+  gap: 20px;
+}
+
+.bicicletas-info h3 {
+  align-items: center;
+  display: flex;
+}
+
+.bicicletas-item h3::before {
+  background-color: var(--p1);
+  content: "";
+  display: inline-block;
+  height: 8px;
+  margin-right: 8px;
+  transition: 0.2s;
+  width: 8px;
+}
+
+.vantagens-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.vantagens-container .btn {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  place-self: end;
+}
+
+.vantagens-container .btn img {
+  transition: 0.2s;
+}
+
+.vantagens-container .btn:hover img {
+  transform: translateX(5px);
+}
+
+.vantagens-container ul {
+  display: grid;
+  gap: 16px;
+}
+
+.vantagens-container ul img {
+  height: 24px;
+  width: 24px;
+}
+
+.vantagens-container li {
+  align-items: center;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: auto 1fr;
+}
+
+.bicicletas-img span {
+  background-color: var(--c12);
+  border-radius: 4px 0 0 4px;
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  top: 16px;
+}
+
+.bicicletas-img {
+  position: relative;
+}
+
+/* Media */
+
+@media (min-width: 900px) {
+  .bicicletas-img img {
+    min-height: 350px;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  .bicicletas-item {
+    background: url("../../img/dec/top-right.svg") no-repeat top 40px right 20px;
+  }
+
+  .bicicletas > li:nth-child(even) .bicicletas-item {
+    background: url("../../img/dec/top-right.svg") no-repeat top 0px right 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .bicicletas-item {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .vantagens-container ul {
+    font-size: 16px;
+  }
+  .bicicletas > li:nth-child(even) {
+    background: var(--c11);
+    padding: 40px 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .vantagens-container {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .vantagens-container .btn {
+    place-self: start;
+  }
+}

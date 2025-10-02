@@ -1,0 +1,24 @@
+.termos h2:not(:first-child) {
+  margin-top: 32px;
+}
+
+.termos h2 {
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.termos p:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.termos p {
+  max-width: 75ch;
+}
+
+/* Media */
+
+@media (min-width: 500px) {
+  #termos .titulo-bg > div {
+    background: url("../img/dec/top-right.svg") no-repeat top 40px right 20px;
+  }
+}

@@ -1,0 +1,244 @@
+/* Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+address {
+  font-style: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+img[src$="jpg"] {
+  border-radius: 4px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+/* Variáveis */
+
+:root {
+  /* Cores */
+  --w: #ffffff;
+  --c1: #f7f7f7;
+  --c2: #ededed;
+  --c3: #dedede;
+  --c4: #cccccc;
+  --c5: #b2b2b2;
+  --c6: #9c9c9c;
+  --c7: #717171;
+  --c8: #595959;
+  --c9: #404040;
+  --c10: #2e2e2e;
+  --c11: #111111;
+  --c12: #000000;
+  --p1: #ffbb00;
+  --p2: #e4a30b;
+  --p3: #a66f00;
+  --p4: #664400;
+  --p5: #332200;
+  /* Tipografia */
+  --font-1-xs: 600 0.75rem / 1.35 "Poppins", sans-serif;
+  --font-1-s: 400 1rem / 1.5 "Poppins", sans-serif;
+  --font-1-m: 400 1.125rem / 1.35 "Poppins", sans-serif;
+  --font-1-l: 400 1.5rem / 1.5 "Poppins", sans-serif;
+  --font-1-xl: 600 2rem / 1.25 "Poppins", sans-serif;
+  --font-1-xxl: 600 4rem / 1.125 "Poppins", sans-serif;
+  --font-2-xs: 400 0.875rem / 1.45 "Roboto";
+  --font-2-s: 400 1rem / 1.5 "Roboto";
+  --font-2-m: 500 1.125rem / 1.35 "Roboto";
+  --font-2-m-b: 600 1.125rem / 1.35 "Roboto";
+  --font-2-l: 400 1.5rem / 1.5 "Roboto";
+  --font-2-l-b: 500 1.5rem / 1.5 "Roboto";
+}
+
+/* Classes - Fontes */
+
+.font-1-xs {
+  font: var(--font-1-xs);
+}
+
+.font-1-s {
+  font: var(--font-1-s);
+}
+
+.font-1-m {
+  font: var(--font-1-m);
+}
+
+.font-1-l {
+  font: var(--font-1-l);
+}
+
+.font-1-xl {
+  font: var(--font-1-xl);
+}
+
+.font-1-xxl {
+  font: var(--font-1-xxl);
+}
+
+.font-2-xs {
+  font: var(--font-2-xs);
+}
+
+.font-2-s {
+  font: var(--font-2-s);
+}
+
+.font-2-m {
+  font: var(--font-2-m);
+}
+
+.font-2-m-b {
+  font: var(--font-2-m-b);
+}
+
+.font-2-l {
+  font: var(--font-2-l);
+}
+
+.font-2-l-b {
+  font: var(--font-2-l-b);
+  text-transform: uppercase;
+}
+
+/*  Tipografia - Media */
+
+@media (max-width: 1200px) {
+  .font-1-xxl {
+    font-size: 3rem;
+  }
+  .font-2-l,
+  .font-2-l-b {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .font-1-xxl {
+    font-size: 2rem;
+  }
+  .font-1-xl {
+    font-size: 1.5rem;
+  }
+}
+
+/* Classes - Cores */
+
+.w {
+  color: var(--w);
+}
+
+.c4 {
+  color: var(--c4);
+}
+
+.c5 {
+  color: var(--c5);
+}
+
+.c6 {
+  color: var(--c6);
+}
+
+.c7 {
+  color: var(--c7);
+}
+
+.c8 {
+  color: var(--c8);
+}
+
+.c9 {
+  color: var(--c9);
+}
+
+.c12 {
+  color: var(--c12);
+}
+
+.p1 {
+  color: var(--p1);
+}
+
+.p4 {
+  color: var(--p4);
+}
+
+.p5 {
+  color: var(--p5);
+}
+
+/* Classes Gerais */
+
+.container-introducao {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.container {
+  padding: 0 20px 0 20px;
+}
+
+.container-2 {
+  padding: 60px 0 60px 0;
+}
+
+.container-3 {
+  padding: 60px 20px 60px 20px;
+}
+
+.max-1200 {
+  max-width: 1200px;
+}
+
+.max-1400 {
+  max-width: 1400px;
+}
+
+.margin-auto {
+  margin: 0 auto;
+}
+
+.col-2 {
+  grid-column: 1 / -1;
+}
+
+/* Classes Gerais - Media */
+
+@media (max-width: 900px) {
+  .container-2 {
+    padding: 40px 0 40px 0;
+  }
+  .container-3 {
+    padding: 40px 20px 40px 20px;
+  }
+}
+
+/* Javascript */

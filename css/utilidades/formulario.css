@@ -1,0 +1,47 @@
+.form {
+  background-color: var(--w);
+  border-radius: 0 4px 4px 0;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form input,
+.form textarea,
+.form select {
+  font: 400 1rem / 1.5 "Roboto", sans-serif;
+  background: var(--c1);
+  border: 1px solid var(--c2);
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form label {
+  display: block;
+  font: 400 1rem / 1.5 "Poppins", sans-serif;
+  margin-bottom: 4px;
+}
+
+.form input[type="email"]:focus,
+.form input[type="text"]:focus,
+.form textarea:focus {
+  outline: 0;
+  border-color: var(--p1);
+  background: var(--c0);
+  box-shadow: 0 0 0 2px #fea;
+}
+
+.form .btn {
+  place-self: start;
+}
+
+/* Media */
+
+@media (max-width: 1200px) {
+  .form {
+    padding: 32px;
+  }
+}
