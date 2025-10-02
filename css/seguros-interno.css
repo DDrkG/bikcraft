@@ -1,7 +1,6 @@
 #seguros .seguros {
   padding-bottom: 60px;
 }
-
 .vantagens-inter-bg {
   background-color: var(--c12);
 }
@@ -34,7 +33,8 @@
 }
 
 .faq button {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   gap: 8px;
   font-weight: bold;
   align-items: center;
@@ -75,6 +75,9 @@
   .vantagens-inter ul {
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
+  }
+  #seguros .seguros {
+    padding-bottom: 40px;
   }
 }
 

@@ -71,5 +71,9 @@
   .seguros {
     grid-template-columns: 1fr;
     gap: 20px 0;
+    padding-bottom: 40px;
+  }
+  #home .seguros-bg .titulo {
+    margin-bottom: 20px;
   }
 }

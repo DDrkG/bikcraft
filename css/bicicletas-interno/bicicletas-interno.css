@@ -21,10 +21,6 @@
   min-width: 200px;
 }
 
-.bicicletas-inter-galeria img:not(:first-child) {
-  cursor: pointer;
-}
-
 .bicicletas-inter-galeria img:first-child {
   min-width: 100%;
 }
@@ -166,7 +162,7 @@
 
 @media (max-width: 900px) {
   .bicicletas-inter-galeria img {
-    min-width: initial;
+    min-width: 200px;
   }
   .bicicletas-inter {
     grid-template-columns: 1fr;
