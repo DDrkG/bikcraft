@@ -126,8 +126,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 20px;
-  background: url("../img/dec/top-left-p.svg") no-repeat top 40px left 20px;
-  background: url("../img/dec/top-right.svg") no-repeat top 40px right 20px;
 }
 
 .orcamento-detalhes ul img {
